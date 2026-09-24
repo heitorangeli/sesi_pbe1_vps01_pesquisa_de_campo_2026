@@ -80,20 +80,24 @@ npm run dev
 | **PUT** | `/:id` | Atualiza as informações do item pelo id. |
 
 ## Exemplos de requisição e testes com o Thunder Client
-- Listar todos os itens:
+- ### Listar todos os itens:
 ![GET](Prints/get.png)
-- Buscar um item pelo ID:
+- ### Buscar um item pelo ID:
 ![GET](Prints/get_one.png)
-- Buscar um item pelo risco:
+- ### Buscar um item pelo risco:
 ![GET](Prints/get_riscon.png)
-- Buscar um item pelo tipo:
+- ### Buscar um item pelo tipo:
 ![GET](Prints/get_typen.png)
-- Cadastrar um novo item usando Post e teste:
+- ### Cadastrar um novo item usando Post e teste:
 ![GET](Prints/post.png)
 ![GET](Prints/post_test.png)
-- Delete e teste:
+- ### Delete e teste:
 ![GET](Prints/delete.png)
 ![GET](Prints/delete_test.png)
-- Put e teste (note que "nivel_risco" e "possui_revisao_humana" foram alterados):
+- ### Put e teste (note que "nivel_risco" e "possui_revisao_humana" foram alterados):
 ![GET](Prints/put.png)
 ![GET](Prints/put_test.png)
+- ### Formulário e teste:<br>
+![GET](Prints/html.png)
+![GET](Prints/html_test.png)
+
