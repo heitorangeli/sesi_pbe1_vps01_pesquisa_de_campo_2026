@@ -81,7 +81,7 @@ npm run dev
 
 ## Exemplos de requisição e testes com o Thunder Client
 - Listar todos os itens:
-![GET](Prints/get_all.png)
+![GET](Prints/get.png)
 - Buscar um item específico:
 ![GET](Prints/get_one.png)
 - Cadastrar um novo item usando Post e teste:
