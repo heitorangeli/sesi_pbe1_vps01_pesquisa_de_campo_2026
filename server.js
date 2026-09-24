@@ -6,12 +6,9 @@ const rotaInicial = (req, res) => {
     res.json("Back-end respondendo")
 }
 
-
-
 function autoIncrement() {
     return Number(dados[dados.length - 1].id) + 1
 }
-
 
 const mostrarDados = (req, res) => {
     res.send(dados)
@@ -30,38 +27,36 @@ const novoDado = (req, res) => {
 
 const buscarDadoPorId = (req, res) => {
     const id = req.params.id;
-    const dadoLocalizado = dados.find((dado) => dado.id == id);
+    const dadoLocalizado = dados.filter((dado) => dado.id == id);
 
     if (dadoLocalizado) {
         res.send(dadoLocalizado);
     } else {
         res.status(404).send("Dado não localizado")
     }
-};
+}
+
 const buscarDadoPorRisco = (req, res) => {
     const risco = req.params.nivel_risco;
-    const dadoLocalizado = dados.find((dado) => dado.nivel_risco == risco);
+    const dadoLocalizado = dados.filter((dado) => dado.nivel_risco == risco);
 
     if (dadoLocalizado) {
         res.send(dadoLocalizado);
     } else {
         res.status(404).send("Dado não localizado")
     }
-};
+}
+
 const buscarDadoPorTipo = (req, res) => {
     const tipo = req.params.tipo;
-    const dadoLocalizado = dados.find((dado) => dado.tipo == tipo);
+    const dadoLocalizado = dados.filter((dado) => dado.tipo == tipo);
 
     if (dadoLocalizado) {
         res.send(dadoLocalizado);
     } else {
         res.status(404).send("Dado não localizado")
     }
-};
-
-
-
-
+}
 
 const excluirDado = (req, res) => {
     const id = req.params.id;
@@ -73,7 +68,7 @@ const excluirDado = (req, res) => {
     });
 
     res.send("Pedido excluido com sucesso.");
-};
+}
 
 const alterarDado = (req, res) => {
     const id = req.params.id;
@@ -90,23 +85,7 @@ const alterarDado = (req, res) => {
     });
 
     res.send("Dados atualizados com sucesso!");
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -116,7 +95,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 const porta = 3000
 
-
 app.get('/t', rotaInicial)
 app.post("/", novoDado)
 app.get("/", mostrarDados)
@@ -125,14 +103,6 @@ app.get("/risco/:nivel_risco", buscarDadoPorRisco)
 app.get("/tipo/:tipo", buscarDadoPorTipo)
 app.delete("/:id", excluirDado)
 app.put("/:id", alterarDado)
-
-
-
-
-
-
-
-
 
 app.listen(porta, () => {
     console.log(`Servidor respondendo em: http://localhost:${porta}`)
