@@ -82,14 +82,18 @@ npm run dev
 ## Exemplos de requisição e testes com o Thunder Client
 - Listar todos os itens:
 ![GET](Prints/get.png)
-- Buscar um item específico:
-![GET](Prints/get_one.png)
+- Buscar um item pelo ID:
+![GET](Prints/get.png)
+- Buscar um item pelo risco:
+![GET](Prints/get_risco.png)
+- Buscar um item pelo tipo:
+![GET](Prints/get_type.png)
 - Cadastrar um novo item usando Post e teste:
 ![GET](Prints/post.png)
-![GET](Prints/get_ac.png)
+![GET](Prints/post_test.png)
 - Delete e teste:
 ![GET](Prints/delete.png)
 ![GET](Prints/delete_test.png)
-- Put e teste (note que o valor foi alterado):
+- Put e teste (note que "nivel_risco" e "possui_revisao_humana" foram alterados):
 ![GET](Prints/put.png)
 ![GET](Prints/put_test.png)
