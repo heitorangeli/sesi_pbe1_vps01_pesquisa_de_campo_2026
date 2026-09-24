@@ -75,7 +75,7 @@ npm run dev
 | **GET** | `/:id` | Retorna um item específico pelo id. |
 | **GET** | `/risco/:nivel_risco` | Retorna um item específico pelo risco. |
 | **GET** | `/tipo/:tipo` | Retorna um item específico pelo tipo. |
-| **DELETE** | `/inventario/:id` | Remove o item referente ao id |
+| **DELETE** | `/:id` | Remove o item referente ao id |
 | **POST** | `/` | Cadastra um novo item com auto increment. |
 | **PUT** | `/:id` | Atualiza as informações do item pelo id. |
 
@@ -89,7 +89,7 @@ npm run dev
 ![GET](Prints/get_ac.png)
 - Delete e teste:
 ![GET](Prints/delete.png)
-![GET](Prints/get_ac.png)
+![GET](Prints/delete_test.png)
 - Put e teste (note que o valor foi alterado):
 ![GET](Prints/put.png)
 ![GET](Prints/put_test.png)
