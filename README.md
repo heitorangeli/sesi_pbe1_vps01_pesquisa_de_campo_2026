@@ -85,9 +85,9 @@ npm run dev
 - Buscar um item pelo ID:
 ![GET](Prints/get_one.png)
 - Buscar um item pelo risco:
-![GET](Prints/get_risco.png)
+![GET](Prints/get_riscon.png)
 - Buscar um item pelo tipo:
-![GET](Prints/get_type.png)
+![GET](Prints/get_typen.png)
 - Cadastrar um novo item usando Post e teste:
 ![GET](Prints/post.png)
 ![GET](Prints/post_test.png)
