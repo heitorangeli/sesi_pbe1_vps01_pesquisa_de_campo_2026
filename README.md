@@ -83,7 +83,7 @@ npm run dev
 - Listar todos os itens:
 ![GET](Prints/get.png)
 - Buscar um item pelo ID:
-![GET](Prints/get.png)
+![GET](Prints/get_one.png)
 - Buscar um item pelo risco:
 ![GET](Prints/get_risco.png)
 - Buscar um item pelo tipo:
@@ -97,3 +97,4 @@ npm run dev
 - Put e teste (note que "nivel_risco" e "possui_revisao_humana" foram alterados):
 ![GET](Prints/put.png)
 ![GET](Prints/put_test.png)
+sa
