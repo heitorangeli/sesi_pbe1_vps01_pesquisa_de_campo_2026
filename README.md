@@ -1,4 +1,7 @@
 # Aula07 - VPF01 - Organização de dados de uma pesquisa de campo
+
+### Descrição do projeto: <br>
+A prefeitura de Amparo necessita realizar o Monitoramento de pontos de descarte irregular, para isso foi desenvolvido um sistema para registrar locais onde foram identificados descartes de lixo, entulho ou resíduos eletrônicos.<hr>
 - script.sql
 ```MYSQL
 drop database if exists gestao_residuos;
